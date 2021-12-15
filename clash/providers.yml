@@ -86,22 +86,6 @@ proxy-providers:
       enable: true
       interval: 600
       url: http://www.gstatic.com/generate_204
-  gb:
-    type: http
-    url: "https://sspool.herokuapp.com/clash/proxies?c=GB"
-    path: sspool.herokuapp.com/provider-gb.yaml
-    health-check:
-      enable: true
-      interval: 600
-      url: http://www.gstatic.com/generate_204
-  nl:
-    type: http
-    url: "https://sspool.herokuapp.com/clash/proxies?c=NL"
-    path: sspool.herokuapp.com/provider-nl.yaml
-    health-check:
-      enable: true
-      interval: 600
-      url: http://www.gstatic.com/generate_204
 
 proxy-groups:
   - name: 选择国家
@@ -183,18 +167,6 @@ proxy-groups:
     interval: 300
     use:
       - fr
-  - name: 🇬🇧 英国
-    type: url-test
-    url: 'http://www.gstatic.com/generate_204'
-    interval: 300
-    use:
-      - gb
-  - name: 🇳🇱 荷兰
-    type: url-test
-    url: 'http://www.gstatic.com/generate_204'
-    interval: 300
-    use:
-      - nl
 
 rules:
   - RULE-SET,applications,DIRECT
