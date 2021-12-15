@@ -102,15 +102,15 @@ rules:
   - RULE-SET,reject,REJECT
   - RULE-SET,icloud,DIRECT
   - RULE-SET,apple,DIRECT
-  - RULE-SET,google,💻 智能
-  - RULE-SET,proxy,💻 智能
+  - RULE-SET,google,🇺🇸 美国
+  - RULE-SET,proxy,🇺🇸 美国
   - RULE-SET,direct,DIRECT
   - RULE-SET,lancidr,DIRECT
   - RULE-SET,cncidr,DIRECT
-  - RULE-SET,telegramcidr,💻 智能
+  - RULE-SET,telegramcidr,🇺🇸 美国
   - GEOIP,,DIRECT
   - GEOIP,CN,DIRECT
-  - MATCH,💻 智能
+  - MATCH,🇺🇸 美国
 
 rule-providers:
   reject:
